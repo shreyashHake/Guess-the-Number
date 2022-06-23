@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Belgrano
+- Font Author: Copyright (c) 2011 by LatinoType Limitada (info@latinotype.com),  with Reserved Font Names "Belgrano"
+- Font Source: http://fonts.gstatic.com/s/belgrano/v18/55xvey5tM9rwKWrJZcMFirl08KDJ.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
