@@ -24,7 +24,7 @@ document.querySelector(".check").addEventListener("click", function () {
     // When input is a correct guess
   } else if (guess === secretNumber) {
       document.querySelector(".message").textContent = "🎉 Correct Number";
-      highScore = Math.max(guess, highScore);
+      highScore = Math.max(score, highScore);
       document.querySelector(".highscore").textContent = highScore;
 
     // Manipulation the CSS :
@@ -32,12 +32,12 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".number").style.width = "30rem";
     document.querySelector(".number").textContent = secretNumber;
         document.querySelector(".restart").textContent =
-          "Restart to Play Again!💫";
+          "Play Again!💫";
 
     // When input is higher than the secreatNumber
   } else if (guess > secretNumber) {
     if (score > 1) {
-      document.querySelector(".message").textContent = "📈 too high!";
+      document.querySelector(".message").textContent = "📈 Too high!";
       score--;
       document.querySelector(".score").textContent = score;
     } else {
@@ -48,13 +48,13 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".number").style.width = "30rem";
       document.querySelector("body").style.backgroundColor = "#e64343";
         document.querySelector(".number").textContent = secretNumber;
-        document.querySelector(".restart").textContent = "Restart to Play Again!💫";
+        document.querySelector(".restart").textContent = "Play Again!💫";
     }
 
     // When input is smaller than the secreatNumber
   } else {
     if (score > 1) {
-      document.querySelector(".message").textContent = "📉 too low!";
+      document.querySelector(".message").textContent = "📉 Too low!";
       score--;
       document.querySelector(".score").textContent = score;
     } else {
@@ -65,7 +65,7 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector("body").style.backgroundColor = "#e64343";
       document.querySelector(".number").textContent = secretNumber;
         document.querySelector(".restart").textContent =
-          "Restart to Play Again!💫";
+          "Play Again!💫";
     }
   }
 });
@@ -75,7 +75,6 @@ document.querySelector(".check").addEventListener("click", function () {
 document.querySelector(".again").addEventListener('click', function () {
     secretNumber = Math.trunc(Math.random() * 20 + 1);
     score = 20;
-    highScore = 0;
     document.querySelector("body").style.backgroundColor = "#222";
     document.querySelector(".number").style.width = "15rem";
     document.querySelector(".number").textContent = '?';
