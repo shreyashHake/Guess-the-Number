@@ -36,4 +36,4 @@
 <hr>
 
 ### 👩‍💻 Contribution 👨‍💻 : 
-> If you want to contribute to this project, go ahed `fork` the repo! and make `pull requst`.
+> If you want to contribute to this project, go ahed `fork` the repo! and make `pull request`.
