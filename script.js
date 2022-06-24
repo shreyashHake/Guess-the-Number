@@ -45,7 +45,7 @@ function restartGame() {
 }
 
 // When check button is clicked ...
-document.querySelector(".check").addEventListener("click", function () {
+function btnToCheck () {
   const guess = Number(document.querySelector(".guess").value);
 
   // When no input is given
@@ -80,7 +80,8 @@ document.querySelector(".check").addEventListener("click", function () {
       lost();
     }
   }
-});
+}
+document.querySelector(".check").addEventListener("click", btnToCheck);
 
 // When again button is clicked
 document.querySelector(".again").addEventListener("click", function () {
@@ -89,4 +90,11 @@ document.querySelector(".again").addEventListener("click", function () {
   displayMessage("Start guessing...");
   displayScore(score);
   restartGame();
+});
+
+document.addEventListener('keydown', function (e) {
+  console.log(e.key);
+  if (e.key === 'Enter') {
+    btnToCheck();
+  }
 });
