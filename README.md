@@ -3,7 +3,7 @@
 ### How it works 🕵️‍♀️ : 
 * A player🎮 enters the number in the range of `1 to 100` in the text input area until he/she win or loose the game.
 * The secretNumber will be hidden behind the `?` until player🎮 win or loose the game.
-* After each guess player will get an idea wheather there guess was `📉 low` or `📈 high` as compaired to the `⁉ secreatNumber`.
+* After each guess player will get an idea wheather their guess was `📉 low` or `📈 high` as compaired to the `⁉ secreatNumber`.
 * Also score will be reduced by 1, after each unsuccessful guess, initialy the score will be set to `20 🎯`.
 * After correct or incorrect guess user will get notified and `highscore ✨` will be set.
 * If player🎮 want to play the game again, they can restart the game by using `Again! 💫` button.
